@@ -21,7 +21,7 @@ attr_accessor :total, :discount, :quantity, :title
       end
     end
     @title << title
-    
+
   end
 
   def apply_discount
