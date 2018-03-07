@@ -20,6 +20,8 @@ attr_accessor :total, :discount, :quantity, :title
         i+=1
       end
     end
+    @title << title
+    
   end
 
   def apply_discount
