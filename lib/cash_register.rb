@@ -41,4 +41,8 @@ attr_accessor :total, :discount, :quantity, :title
     @title
   end
 
+  def void_last_transaction
+
+  end
+
 end
