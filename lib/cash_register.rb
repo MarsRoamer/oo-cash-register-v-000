@@ -17,7 +17,7 @@ attr_accessor :total, :discount, :quantity
     discount = (@discount.to_f/100.to_f) * @total.to_f
 
     @total = @total - discount
-    puts "After the discount, the total comes to $#{@total.to_i}."
+   "After the discount, the total comes to $#{@total.to_i}."
 
   end
 
