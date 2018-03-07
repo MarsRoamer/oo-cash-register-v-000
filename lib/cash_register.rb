@@ -20,7 +20,9 @@ attr_accessor :total, :discount, :quantity, :title
         i+=1
       end
     end
-    @title << title
+    if quantity == 1
+      @title << title
+    end
 
   end
 
