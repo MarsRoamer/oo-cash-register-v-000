@@ -12,6 +12,11 @@ attr_accessor :total, :discount, :quantity
     @quantity = quantity
   end
 
+  def apply_discount
+    discount = (@discount/100) * @total
+    @total =- discount
+
+  end
 
 
 end
