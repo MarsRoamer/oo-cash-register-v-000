@@ -17,6 +17,7 @@ attr_accessor :total, :discount, :quantity, :title
       i = 0
       while i < quantity
         @title << title
+        i+=1
       end
     end
   end
