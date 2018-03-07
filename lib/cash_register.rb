@@ -14,7 +14,7 @@ attr_accessor :total, :discount, :quantity
   end
 
   def apply_discount
-    discount = (@discount/100) * @total
+    discount = (@discount.to_f/100.to_f) * @total.to_f
     binding.pry
     @total =- discount
 
