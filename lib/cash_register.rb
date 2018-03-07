@@ -13,15 +13,19 @@ attr_accessor :total, :discount, :quantity, :title
   def add_item(title, price, quantity = 1)
     @total += (price * quantity)
     @quantity = quantity
-    @title << title
+    if quantity > 1
+      i = 0
+      while i < quantity
+        @title << title
+      end
+    end
   end
 
   def apply_discount
 
-
-    if @discount == 0
+  if @discount == 0
       "There is no discount to apply."
-   else
+  else
      discount = (@discount.to_f/100.to_f) * @total.to_f
      @total = @total - discount
     "After the discount, the total comes to $#{@total.to_i}."
