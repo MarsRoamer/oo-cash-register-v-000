@@ -16,8 +16,11 @@ attr_accessor :total, :discount, :quantity
   def apply_discount
     discount = (@discount.to_f/100.to_f) * @total.to_f
 
-    @total = @total - discount
-   "After the discount, the total comes to $#{@total.to_i}."
+    if @discount > 1
+      @total = @total - discount
+     "After the discount, the total comes to $#{@total.to_i}."
+   else 
+     "There is no discount to apply."
 
   end
 
