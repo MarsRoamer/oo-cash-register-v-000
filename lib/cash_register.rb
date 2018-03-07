@@ -14,7 +14,7 @@ attr_accessor :total, :discount, :quantity
   end
 
   def apply_discount
-    
+
 
     if @discount > 0
       discount = (@discount.to_f/100.to_f) * @total.to_f
